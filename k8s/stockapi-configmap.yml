@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stockapi-configmap
+  namespace: stockapi
+data:
+  port: "3005"

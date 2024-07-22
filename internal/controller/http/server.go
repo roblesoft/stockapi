@@ -23,6 +23,7 @@ func (s *Server) SetupRouter() {
 	s.Router = http.NewServeMux()
 
 	s.Router.HandleFunc("GET /ping", s.Ping)
+	s.Router.HandleFunc("GET /square", s.Square)
 }
 
 func (s Server) Run() {
